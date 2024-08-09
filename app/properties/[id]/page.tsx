@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import ReservationSidebar from "@/app/components/properties/ReservationSidebar";
+
 const PropertyDetailPage = () => {
     return (
         <main className="max-w-[1500px] mx-auto px-6">
@@ -30,9 +32,19 @@ const PropertyDetailPage = () => {
                     className="rounded-full"
                     alt="The user name"
                     />
-                    {/* </Image></div> */}
+                    
+                    <p><strong>John Doe</strong> is your host</p>
                     </div>
+
+                    <hr />
+
+                    <p className="mt-6 text-lg">
+                        Some random information about the landloard and a
+                        description of the house.
+                    </p>
         </div>
+
+        <ReservationSidebar />
 
         <div className="py-6 pr-6 col-span-3">
             right side
